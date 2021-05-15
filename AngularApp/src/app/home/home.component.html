@@ -1,0 +1,18 @@
+
+
+<div class="container-fluid"> 
+    <div class="row">
+    <div class="col-md-6">
+   <app-employeelist [emps]="emps" (newClicked)="newClicked()" ></app-employeelist>
+    </div>
+  
+ <div class="col-md-6">
+        <app-employee-view (empCreated)="addOrUpdateEmployee($event)" [currentEmp]="thisCurrentRecord"> </app-employee-view>
+    </div>
+
+
+</div>
+</div>
+
+
+
